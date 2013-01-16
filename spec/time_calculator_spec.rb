@@ -58,7 +58,7 @@ describe TimeCalculator, "behaving as expected" do
 	end
 
 	it "handles change from 12 to 1" do
-		time = "12:59 AM"
+		time = "12:59 PM"
 		minutes = 1
 		result = @timecalculator.add_minutes(time, minutes)
 		result.should == "1:00 AM" 

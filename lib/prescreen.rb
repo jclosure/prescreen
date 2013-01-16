@@ -5,7 +5,7 @@ module Prescreen
   	
   	def add_minutes(time_string, minutes_string)
   		time = CustomTime.new(time_string)
-  		
+  		set_meridiem time, minutes_string.to_i
   		time.minutes += minutes_string.to_i
   		if (time.minutes > 59)
   			time.hours += time.minutes / 60
@@ -14,7 +14,6 @@ module Prescreen
   		if (time.hours > 12)
   			time.hours -= 12
   		end
-  		set_meridiem time, minutes_string.to_i
   		time.to_s
   	end
 
