@@ -1,6 +1,5 @@
 
 module Prescreen
-
   class TimeCalculator
   	
   	def add_minutes(time_string, minutes_to_add)
