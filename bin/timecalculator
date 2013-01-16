@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+path = File.expand_path('../../lib/prescreen.rb', __FILE__)
+
+require path
+
+include Prescreen
+
+p TimeCalculator.new.send(ARGV.shift.to_sym, *ARGV)
