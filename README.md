@@ -13,7 +13,7 @@ Without using any built in date or time functions, write a function or method th
 		* Implementation delivered as a gem
 		* Created binary wrapper for executing TimeCalculator's behaviors from cli
 
-Note to Employer: This was an enjoyable excersise.  It was designed and developed using BDD style, red-green-refactor-driven, approach.  See time_calculator_spec.rb for coverage.  I hope to be able to speak with you soon.
+Note to Employer: This was an enjoyable excersise.  It was designed and developed using BDD style, red-green-refactor-driven approach.  See time_calculator_spec.rb for coverage.  I hope to be able to speak with you soon.
 
 Thanks,
 
