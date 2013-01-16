@@ -13,7 +13,7 @@ Without using any built in date or time functions, write a function or method th
 		* Implementation delivered as a gem
 		* Created binary wrapper for executing TimeCalculator's behaviors from cli
 
-Note to Employer: This was an enjoyable excersise.  I hope to be able to speak with you soon.
+Note to Employer: This was an enjoyable excersise.  It was designed and developed using BDD style, red-green-refactor-driven, approach.  See time_calculator_spec.rb for coverage.  I hope to be able to speak with you soon.
 
 Thanks,
 
@@ -23,7 +23,7 @@ Joel
 
 From the command line type:
 
-    git clone https://github.com/jclosure/prescreen.git'
+    $ git clone https://github.com/jclosure/prescreen.git'
 
 And then type (note all commands below assume you are in the prescreen directory):
 
@@ -45,6 +45,17 @@ Alternatively, you can install the gem for general purpose use in your system li
 	$ gem install
 
 ## Usage
+
+You can use this library in your applications with code similar to:
+
+	require 'prescreen'
+	include Prescreen
+
+	time_calculator = TimeCalculator.new
+
+	time = "8:00 AM"
+	adjusted_time = time_calculator.add_minutes(time, 2)
+
 
 You can run the commandline wrapper for this library by doing the following:
 
