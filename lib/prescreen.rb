@@ -3,10 +3,10 @@ module Prescreen
 
   class TimeCalculator
   	
-  	def add_minutes(time_string, minutes_string)
+  	def add_minutes(time_string, minutes_to_add)
   		time = CustomTime.new(time_string)
-  		set_meridiem time, minutes_string.to_i
-  		time.minutes += minutes_string.to_i
+  		set_meridiem time, minutes_to_add.to_i
+  		time.minutes += minutes_to_add.to_i
   		if (time.minutes > 59)
   			time.hours += time.minutes / 60
   			time.minutes = time.minutes % 60
