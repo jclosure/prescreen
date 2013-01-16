@@ -77,7 +77,7 @@ Run the tests by executing (from the prescreen directory)
 Alternatively you can do the following
 
 	$ bundle
-	$ respec
+	$ rspec
 
 
 ## Contributing
