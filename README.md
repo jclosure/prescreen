@@ -39,7 +39,7 @@ And then execute:
 
     $ bundle install
 
-Alternatively, you can install the gem for general purpose use in your system like this:
+Alternatively, if you've cloned the repo, from the prescreen directory, you can install the gem for general purpose use in your system like this:
 
 	$ rake build
 	$ gem install
