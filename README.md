@@ -5,6 +5,7 @@ Without using any built in date or time functions, write a function or method th
 
 	Notable Characteristics:
 
+		* No built in Date or Time libraries were used
 		* Implemented as a Library
 		* TimeCalculator wrapped in a module for namespacing
 		* Full set of specs verifying requirements cited above
@@ -12,28 +13,21 @@ Without using any built in date or time functions, write a function or method th
 		* Implementation delivered as a gem
 		* Created binary wrapper for executing TimeCalculator's behaviors from cli
 
+Note to Employer: This was an enjoyable excersise.  I hope to be able to speak with you soon.
+
+Thanks,
+
+Joel
+
 ## Get this code
 
 From the command line type:
 
     git clone https://github.com/jclosure/prescreen.git'
 
-And then type:
+And then type (note all commands below assume you are in the prescreen directory):
 
     $ cd prescreen
-
-Build and run the tests by executing
-
-    $ rake
-
-Alternatively you can do the following
-
-	$ bundle
-	$ respec
-
-## Usage
-
-Get 
 
 ## Installing the Gem
 
@@ -43,7 +37,37 @@ Add this line to your application's Gemfile:
 
 And then execute:
 
-    $ bundle
+    $ bundle install
+
+Alternatively, you can install the gem for general purpose use in your system like this:
+
+	$ rake build
+	$ gem install
+
+## Usage
+
+You can run the commandline wrapper for this library by doing the following:
+
+From the prescreen directory, execute:
+
+	$ ./bin/timecalculator add_minutes "8:00 AM" 2
+
+Or if you have installed for general system use, from anywhere in your system you can type:
+
+	$ timecalculator add_minutes "8:00 AM" 2
+
+## Run the tests
+
+
+Run the tests by executing (from the prescreen directory)
+
+    $ rake
+
+Alternatively you can do the following
+
+	$ bundle
+	$ respec
+
 
 ## Contributing
 
