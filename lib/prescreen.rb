@@ -32,6 +32,7 @@ module Prescreen
   		attr_accessor :meridiem
 
   		def initialize(time_string)
+  			time_string.strip!
   			unless valid? time_string
   				raise ArgumentError, "#{time_string} is not a valid time string"
   			end
@@ -39,7 +40,7 @@ module Prescreen
   		end
 
   		def valid?(string)
-  			string.match /^\d{1,2}:\d\d\s([aA][mM]|[pP][mM])/
+  			string.match /^\d{1,2}:\d\d\s([aA][mM]|[pP][mM])$/
   		end
 
   		def parse(string)
