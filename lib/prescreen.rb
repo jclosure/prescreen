@@ -16,6 +16,8 @@ module Prescreen
   		time.to_s
   	end
 
+	private
+  	
   	def set_meridiem(time, minutes_to_add)
   		total_minutes = time.minutes + minutes_to_add
   		hours_to_add = total_minutes / 60
